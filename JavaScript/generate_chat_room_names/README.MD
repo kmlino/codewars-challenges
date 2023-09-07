@@ -10,7 +10,7 @@ If only one person in the chat room has a specific first name, only their first 
  **John Smith -> John**
 
 If two or more people have a specific first name, but don't share a second name initial, their first name and second name initial will be written out.
- **John Smith -> John S    
+**John Smith -> John S    
  John Adams -> John A**
 
 Finally, if two or more people have a specific first name and last name initial, their full name will be written out.
