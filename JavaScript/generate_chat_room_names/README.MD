@@ -1,29 +1,33 @@
-# DESCRIPTION
+# Chat room names
 
-You are writing a chat room app for your company.
+## DESCRIÇÃO
 
-Users have provided feedback that seeing everyone's full names on the screen creates too much noise, and have asked for it to be reduced. However, we still want to be able to uniquely identify everyone. The team have come up with a few rules that will hopefully help in solving this problem!
+Você está escrevendo um aplicativo de sala de bate-papo para a sua empresa.
 
-Note: It can be assumed that names are in the format of a first name and a last name consisting solely of letters from the English alphabet, both uppercase (A-Z) and lowercase (a-z), separated by a single space and if no names are provided, we should return an empty array.
+Os usuários forneceram feedback de que ver os nomes completos de todos na tela cria muito ruído e pediram que isso fosse reduzido. No entanto, ainda queremos ser capazes de identificar todos de forma exclusiva. A equipe elaborou algumas regras que, esperamos, ajudarão a resolver esse problema!
 
-If only one person in the chat room has a specific first name, only their first name will be written out.
+Observação: pode-se presumir que os nomes estão no formato de um primeiro nome e um sobrenome que consistem apenas em letras do alfabeto inglês, tanto maiúsculas (A-Z) quanto minúsculas (a-z), separadas por um único espaço e, se nenhum nome for fornecido, devemos retornar uma matriz vazia.
+
+Se apenas uma pessoa na sala de bate-papo tiver um primeiro nome específico, somente o primeiro nome dela será escrito.
 
  **John Smith -> John**
 
-If two or more people have a specific first name, but don't share a second name initial, their first name and second name initial will be written out.
+Se duas ou mais pessoas tiverem um primeiro nome específico, mas não compartilharem a inicial do segundo nome, o primeiro nome e a inicial do segundo nome serão escritos.
 
-**John Smith -> John S    
+**John Smith -> John S \
  John Adams -> John A**
 
-Finally, if two or more people have a specific first name and last name initial, their full name will be written out.
+Por fim, se duas ou mais pessoas tiverem um primeiro nome e uma inicial de sobrenome específicos, seu nome completo será escrito.
 
- **John Smith -> John Smith    
+ **John Smith -> John Smith \
  John Simms -> John Simms**
 
-To help tidy up the output, management have also asked that the chat room list should be alphabetised, by the users screen names and should all be in Title Case.
+Para ajudar a organizar a saída, a gerência também solicitou que a lista de salas de bate-papo fosse alfabetizada pelos nomes de tela dos usuários e que todos estivessem em maiúsculas e minúsculas.
 
 **JOHN smith -> John Smith**
 
-For our purposes, when we receive the names casing is not important, meaning JOHn SmiTh is equal to john smith, after we've tidied up the casings, these should be interpreted as the same name.
+Para nossos propósitos, quando recebemos os nomes, a caixa não é importante, o que significa que JOHn SmiTh é igual a john smith.
 
-Our company also has an unusual policy - we don't hire somebody if an employee already exists with the same full name, as our HR platform identifies staff by a combination of their first and last names. Due to this, we don't have to worry about multiple instances of the same full name.
+Nossa empresa também tem uma política incomum: não contratamos ninguém se já existir um funcionário com o mesmo nome completo, pois nossa plataforma de RH identifica a equipe por uma combinação de nome e sobrenome. Por esse motivo, não precisamos nos preocupar com várias instâncias do mesmo nome completo.
+
+**English description here on [Generate chat room names](https://www.codewars.com/kata/64d9f8b2dd14d200247b8184)**

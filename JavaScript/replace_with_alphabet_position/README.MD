@@ -1,23 +1,28 @@
-# DESCRIPTION
 
-In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+# Replace with alphabet position
 
-If anything in the text isn't a letter, ignore it and don't return it.
+## DESCRIÇÃO:
+
+Neste kata você é desafiado a trocar cada letra de determinada string pela sua posição no alfabeto.
+
+O que não for letra, ignore e não retorne nada.
 
 ``` javascript
 "a" = 1, "b" = 2
 ```
 
-## Example
+## Exemplo
 
 ``` javascript
 alphabetPosition("The sunset sets at twelve o' clock.")
 ```
 
-Should return  
+Deveria retornar:  
 
 ``` javascript
 "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
 ```
 
-( as a string )
+( como uma string )
+
+**English description here on [Replace with the alphabet position](https://www.codewars.com/kata/546f922b54af40e1e90001da)**
