@@ -2,7 +2,7 @@
 
 ## DESCRIÇÃO:
 
-Neste kata, misturamos um suco de frutas saboroso. Podemos adicionar alguns componentes com determinadas quantidades. Às vezes, despejamos um pouco do nosso suco. Depois, queremos descobrir quais são as concentrações do nosso suco de fruta.
+Neste kata misturamos um suco de frutas saboroso. Podemos adicionar alguns componentes com determinadas quantidades. Às vezes, despejamos um pouco do nosso suco. Depois, queremos descobrir quais são as concentrações do nosso suco de fruta.
 
 Exemplo:
 

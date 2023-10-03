@@ -27,4 +27,13 @@ M = ["A", "B", "C", "W"]
 
 e sua tarefa é encontrar todos os livros de L com códigos pertencentes a cada categoria de M e somar a quantidade deles de acordo com cada categoria.
 
+``` python
+articles = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"]
+categories = ["A", "B", "D"]
+```
+deve retornar:
+``` python
+(A : 20) - (B : 114) - (D : 60)
+```
+
 **English description here on [Help the bookseller](https://www.codewars.com/kata/54dc6f5a224c26032800005c) challenge.**

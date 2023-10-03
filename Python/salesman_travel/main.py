@@ -32,19 +32,23 @@ travel(r, "NY 5643") --> "NY 5643:/"
 
 
 def travel(r, zipcode):
-    st = r.split(',')
+    # Separa os endereços e guarda em uma lista
+    addresses = r.split(',')
     street = ''
     num = ''
-
-    for i in st:
-        if zipcode in i and len(zipcode) == 8:
+    
+    # Itera sobre cada endereço
+    for address in addresses:
+        # Segue apenas com códigos postais válidos
+        if zipcode in address and len(zipcode) == 8:
+            # Concatena as ruas e números do mesmo código postal em strings separadas
             if not street:
-                street = (i[i.index(' '):i.index(zipcode)].strip())
-                num = (i[0:i.index(' ')])
+                street = (address[address.index(' '):address.index(zipcode)].strip())
+                num = (address[0:address.index(' ')])
             else:
-                street += ',' + (i[i.index(' '):i.index(zipcode)].strip())
-                num += ',' + (i[0:i.index(' ')])
-
+                street += ',' + (address[address.index(' '):address.index(zipcode)].strip())
+                num += ',' + (address[0:address.index(' ')])
+    # Se o código for inválido, devolve o próprio, senão, retorna os endereços formatados
     res = f"{zipcode}:{street}/{num}"
     return res
 

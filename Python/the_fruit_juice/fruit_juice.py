@@ -17,11 +17,12 @@ Complete the functions in order to provide this functionality. The test code for
 '''
 
 
-class Jar():
+class Jar:
     def __init__(self):
         self.amount = 0
         self.kind_amount = dict()
 
+    # Método para adicionar e calcular as unidades de cada sabor
     def add(self, amount, kind):
         total = amount
         for k, v in self.kind_amount.items():
@@ -30,14 +31,17 @@ class Jar():
         self.kind_amount.update({kind: total})
         self.amount += amount
 
+    # Método para calcular a retirada de suco e manter as concentrações calculadas
     def pour_out(self, amount):
         total = self.amount - amount
         for k, v in self.kind_amount.items():
             self.kind_amount[k] = total * self.get_concentration(k)
         self.amount = total
 
+    # Método para extrair total de unidades
     def get_total_amount(self):
         return self.amount
 
+    # Método para calcular concentração
     def get_concentration(self, kind):
         return ((self.kind_amount[kind]) / self.amount) if kind in self.kind_amount else 0
